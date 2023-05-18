@@ -15,7 +15,7 @@ public class Event implements Comparable<Event> {
 		this.time = time;
 		this.type = type;
 	}
-	public int getTime() {
+	public int getTime() { //solo getters: li creo, li uso e li butto via.
 		return time;
 	}
 	public EventType getType() {
@@ -29,7 +29,7 @@ public class Event implements Comparable<Event> {
 	}
 	@Override
 	
-	public int compareTo(Event other) {
+	public int compareTo(Event other) { //l'oggetto deve essere ordinabile: priorità tempo + basso
 		return this.time-other.time;
 	}
 	
